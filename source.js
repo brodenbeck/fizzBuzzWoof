@@ -1,49 +1,52 @@
 function fizzBuzzWoof(i) {
   var string = i + ""; 
     
+  for(i = 1; i < 101; i++) {
+
     if(divisibleBy(i, 7) || string.includes("7")) {
       if(divisibleBy(i, 5) || string.includes("5")) {
         if(divisibleBy(i, 3) || string.includes("3")) {
-          return "fizzbuzzwoof";
+          console.log("fizzbuzzwoof");
         }
       }
     }
     
     if(divisibleBy(i, 7) || string.includes("7")) {
       if(divisibleBy(i, 5) || string.includes("5")) {
-        return "buzzwoof";
+        console.log("buzzwoof");
       }
     }
     
     if(divisibleBy(i, 3) || string.includes("3")) {
       if(divisibleBy(i, 5) || string.includes("5")) {
-        return "fizzbuzz";
+        console.log("fizzbuzz");
       }
     }
     
     if(divisibleBy(i, 7) || string.includes("7")) {
       if(divisibleBy(i, 3) || string.includes("3")) {
-        return "fizzwoof";
+        console.log("fizzwoof");
       }
     }
     
     if(divisibleBy(i, 3) || string.includes("3")) {
-      return "fizz";
+      console.log("fizz");
     }
     
     if(divisibleBy(i, 5) || string.includes("5")) {
-      return "buzz";
+      console.log("buzz");
     }
     
     if(divisibleBy(i, 7) || string.includes("7")) {
-      return "woof";
+      console.log("woof");
     }
     
-    return i;
-    
+    console.log(i);
   }
 }
 
 function divisibleBy(num, divisor) {
   return num % divisor === 0;
 }
+
+fizzBuzzWoof();
